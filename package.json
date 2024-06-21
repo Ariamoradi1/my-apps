@@ -1,8 +1,17 @@
 {
-  "name": "@my-apps/source",
+  "name": "my-apps",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "ng": "nx",
+    "postinstall": "node ./decorate-angular-cli.js",
+    "start:store": "nx serve store",
+    "build:store": "nx build store",
+    "test:store": "nx test store",
+    "prepare": "husky install",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write ."
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~18.0.0",

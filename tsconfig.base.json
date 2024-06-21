@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@my-apps/common": ["libs/shared/util/common/src/index.ts"]
+      "@my-apps/common": ["libs/shared/util/common/src/index.ts"],
+      "@my-apps/header": ["libs/shared/ui/header/src/index.ts"],
+      "@my-apps/main": ["libs/store/features/main/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
